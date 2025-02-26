@@ -127,7 +127,7 @@ export function HyperText({
         {displayText.map((letter, index) => (
           <motion.span
             key={index}
-            className={cn("font-redhat text-6xl md:text-8xl", letter === " " ? "w-3" : "")}
+            className={cn("font-chakra text-6xl md:text-6xl", letter === " " ? "w-3" : "")}
           >
             {letter.toUpperCase()}
           </motion.span>
