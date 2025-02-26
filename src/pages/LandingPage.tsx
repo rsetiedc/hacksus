@@ -1,7 +1,6 @@
 import React from "react";
 import { Particles } from "@/components/magicui/particles";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
-import { LineShadowText } from "@/components/magicui/line-shadow-text";
 import { TypingAnimation } from "@/components/magicui/terminal";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 import { FooterSection } from "@/components/ui/footer-section";
@@ -30,10 +29,8 @@ import { Dock } from "@/components/ui/dock-two";
 import { HyperText } from "@/components/magicui/hyper-text";
 import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
-import { InputIcon, QuestionMarkIcon } from "@radix-ui/react-icons";
 import { Calendar } from "@/components/ui/calendar";
 import { Marquee } from "@/components/magicui/marquee";
-import { ThemeProvider } from "next-themes";
 
 const LandingPage: React.FC = () => {
   const timelineData = [
