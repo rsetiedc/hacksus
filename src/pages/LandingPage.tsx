@@ -176,8 +176,8 @@ const LandingPage: React.FC = () => {
       name: "What is HackS’US 4.0?",
       description:
         "HackS’US 4.0 is a premier 36-hour hackathon hosted by RSET IEDC & IIC, where participants build innovative tech solutions to tackle real-world challenges.",
-      href: "/faq#what-is-hacksus",
-      cta: "Learn more",
+      // href: "/faq#what-is-hacksus",
+      // cta: "Learn more",
       background: (
         <img
           className="absolute -top-20 opacity-60"
@@ -192,8 +192,8 @@ const LandingPage: React.FC = () => {
       name: "Who can participate?",
       description:
         "Students from any college or university can join, with teams required to have 4-6 members.",
-      href: "/faq#who-can-participate",
-      cta: "Learn more",
+      // href: "/faq#who-can-participate",
+      // cta: "Learn more",
       background: (
         <img
           className="absolute -right-20 -top-20 opacity-60"
@@ -208,8 +208,8 @@ const LandingPage: React.FC = () => {
       name: "Where is the event happening?",
       description:
         "The hackathon will take place at Rajagiri School of Engineering & Technology (RSET), Kakkanad, Kochi, near Infopark.",
-      href: "/faq#location",
-      cta: "Learn more",
+      // href: "/faq#location",
+      // cta: "Learn more",
       background: (
         <iframe
           className="absolute opacity-30 w-100 h-full"
@@ -228,8 +228,8 @@ const LandingPage: React.FC = () => {
       name: "What is the registration fee?",
       description:
         "Registration fees vary by category: Early Bird ₹499, Regular ₹699, and FOMO ₹799.",
-      href: "/faq#registration-fee",
-      cta: "Learn more",
+      // href: "/faq#registration-fee",
+      // cta: "Learn more",
       background: (
         <img
           className="absolute -right-20 -top-20 opacity-60"
@@ -244,8 +244,8 @@ const LandingPage: React.FC = () => {
       name: "Will food and accommodation be provided?",
       description:
         "Food will be provided throughout the event, with common napping and resting spaces available on campus (no dedicated accommodation).",
-      href: "/faq#food-accommodation",
-      cta: "Learn more",
+      // href: "/faq#food-accommodation",
+      // cta: "Learn more",
       background: (
         <img
           className="absolute -right-20 -top-20 opacity-60"
@@ -260,8 +260,8 @@ const LandingPage: React.FC = () => {
       name: "When will the problem statements be released?",
       description:
         "Problem statements will be released 24 hours before the hackathon begins, giving teams time to strategize.",
-      href: "/faq#problem-statements",
-      cta: "Learn more",
+      // href: "/faq#problem-statements",
+      // cta: "Learn more",
       background: (
         <Calendar
           mode="single"
@@ -276,8 +276,8 @@ const LandingPage: React.FC = () => {
       name: "Can I participate if I don’t have a team?",
       description:
         "Team formation is not facilitated. Participants must register as a complete team of 4-6 members.",
-      href: "/faq#team-formation",
-      cta: "Learn more",
+      // href: "/faq#team-formation",
+      // cta: "Learn more",
       background: (
         <img
           className="absolute -right-20 -top-20 opacity-60"
@@ -292,8 +292,8 @@ const LandingPage: React.FC = () => {
       name: "What are the prizes and benefits?",
       description:
         "Winners receive cash prizes, mentorship opportunities, industry networking, investor pitch chances, and potential internship offers.",
-      href: "/faq#prizes-benefits",
-      cta: "Learn more",
+      // href: "/faq#prizes-benefits",
+      // cta: "Learn more",
       background: (
         <img
           className="absolute -right-20 -top-20 opacity-60"
@@ -308,8 +308,8 @@ const LandingPage: React.FC = () => {
       name: "What should I bring?",
       description:
         "Bring your laptop, charger, extension cords, and personal essentials (clothes, toiletries, medicines, etc.) for the two-day hackathon.",
-      href: "/faq#what-to-bring",
-      cta: "Learn more",
+      // href: "/faq#what-to-bring",
+      // cta: "Learn more",
       background: (
         <Marquee
           pauseOnHover
@@ -339,8 +339,8 @@ const LandingPage: React.FC = () => {
       name: "Who can I contact for more details?",
       description:
         "For any queries, please refer to the contact details on our website.",
-      href: "/faq#contact",
-      cta: "Learn more",
+      // href: "/faq#contact",
+      // cta: "Learn more",
       background: (
         <img
           className="absolute -right-20 -top-20 opacity-60"
