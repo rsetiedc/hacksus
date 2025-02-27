@@ -37,18 +37,18 @@ const LandingPage: React.FC = () => {
     {
       title: "26 Feb",
       content: (
-        <div className="flex gap-5 space-between items-center">
+        <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
           <img
-            className="w-100 rounded-2xl shadow-lg"
+            className="w-full md:w-1/3 rounded-2xl shadow-lg"
             src="/src/img/event3.jpg"
-            alt=""
+            alt="React-ivate Workshop"
           />
-          <div className="flex flex-col min-w-10 gap-1">
+          <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
             <h3 className="text-2xl uppercase font-bold">React-ivate</h3>
-            <Badge className="w-fit mb-3">React Workshop</Badge>{" "}
-            <p className="">
+            <Badge className="w-fit mb-3">React Workshop</Badge>
+            <p>
               A <strong>One-Day</strong> Workshop on <strong>React</strong>,
-              taking particpants from zero to hero by building an AI powered
+              taking participants from zero to hero by building an AI-powered
               chat app.
             </p>
           </div>
@@ -59,26 +59,28 @@ const LandingPage: React.FC = () => {
       title: "27 Feb",
       content: (
         <div>
-          <h3 className="text-2xl">Hackathon Regsitration Opens</h3>
+          <h3 className="text-2xl text-left md:text-left">
+            Hackathon Registration Opens
+          </h3>
         </div>
       ),
     },
     {
       title: "27 Feb",
       content: (
-        <div className="flex gap-5 space-between items-center">
+        <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
           <img
-            className="w-100 rounded-2xl shadow-lg"
+            className="w-full md:w-1/3 rounded-2xl shadow-lg"
             src="/src/img/event2.jpg"
-            alt=""
+            alt="RAG-volution Workshop"
           />
-          <div className="flex flex-col min-w-10 gap-1">
+          <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
             <h3 className="text-2xl uppercase font-bold">RAG-volution</h3>
-            <Badge className="w-fit mb-3">RAG Workshop</Badge>{" "}
-            <p className="">
-              A <strong>hands on</strong> session on{" "}
-              <strong>Retiveal Augmented Generation (RAG)</strong> using{" "}
-              <strong>Google Colab</strong> and <strong>Python</strong>
+            <Badge className="w-fit mb-3">RAG Workshop</Badge>
+            <p>
+              A <strong>hands-on</strong> session on
+              <strong> Retrieval Augmented Generation (RAG)</strong> using
+              <strong> Google Colab</strong> and <strong>Python</strong>.
             </p>
           </div>
         </div>
@@ -87,37 +89,30 @@ const LandingPage: React.FC = () => {
     {
       title: "2 Mar",
       content: (
-        <div className="flex gap-5 space-between items-center">
+        <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
           <img
-            className="w-100 rounded-2xl shadow-lg"
+            className="w-full md:w-1/3 rounded-2xl shadow-lg"
             src="/src/img/event1.jpg"
-            alt=""
+            alt="UI-Alchemist Workshop"
           />
-          <div className="flex flex-col min-w-10 gap-1">
+          <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
             <h3 className="text-2xl uppercase font-bold">UI-Alchemist</h3>
-            <Badge className="w-fit mb-3">UI / UX Workshop</Badge>{" "}
-            <p className="">
+            <Badge className="w-fit mb-3">UI/UX Workshop</Badge>
+            <p>
               A <strong>12-hour</strong> design hackathon using{" "}
-              <strong>Figma</strong>
+              <strong>Figma</strong>.
             </p>
           </div>
         </div>
       ),
     },
-    // {
-    //   title: "2 - 8 Mar",
-    //   content: (
-    //     <div>
-    //       <h3 className="text-2xl">Game Jam</h3>
-    //       <Badge>Precursor</Badge>{" "}
-    //     </div>
-    //   ),
-    // },
     {
       title: "7 Mar",
       content: (
         <div>
-          <h3 className="text-2xl">Hackathon Registration Closes</h3>
+          <h3 className="text-2xl text-left">
+            Hackathon Registration Closes
+          </h3>
         </div>
       ),
     },
@@ -125,7 +120,7 @@ const LandingPage: React.FC = () => {
       title: "14-16 Mar",
       content: (
         <div>
-          <h3 className="text-2xl">HackS'US</h3>
+          <h3 className="text-2xl text-left">HackS'US</h3>
         </div>
       ),
     },
@@ -481,7 +476,6 @@ const LandingPage: React.FC = () => {
       >
         REGISTER NOW |
       </VelocityScroll>
-      
 
       <BentoGrid className="bg-background">
         {features.map((feature, idx) => (
