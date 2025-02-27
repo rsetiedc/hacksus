@@ -110,9 +110,7 @@ const LandingPage: React.FC = () => {
       title: "7 Mar",
       content: (
         <div>
-          <h3 className="text-2xl text-left">
-            Hackathon Registration Closes
-          </h3>
+          <h3 className="text-2xl text-left">Hackathon Registration Closes</h3>
         </div>
       ),
     },
@@ -389,7 +387,12 @@ const LandingPage: React.FC = () => {
         </header>
 
         {/* Register Button */}
-        <InteractiveHoverButton className="my-5 font-redhat">
+        <InteractiveHoverButton
+          className="my-5 font-redhat"
+          onClick={() =>
+            window.open("https://konfhub.com/hacksus-edition-iv", "_blank")
+          }
+        >
           Register Now
         </InteractiveHoverButton>
         <div className="flex flex-col md:flex-row">
