@@ -390,7 +390,7 @@ const LandingPage: React.FC = () => {
         <InteractiveHoverButton
           className="my-5 font-redhat"
           onClick={() =>
-            window.open("https://konfhub.com/hacksus-edition-iv", "_blank")
+            window.open("https://konfhub.com/hacksus-edition-4", "_blank")
           }
         >
           Register Now
