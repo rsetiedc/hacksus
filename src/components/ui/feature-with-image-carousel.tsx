@@ -29,7 +29,7 @@ function Feature() {
       className="w-full py-20 lg:py-40 font-redhat px-10 md:px-50"
     >
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-3 justify-end items-end  gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 justify-end items-center items-end  gap-10">
           <div className="w-full max-w-full px-6 col-span-2">
             <Carousel>
               <CarouselContent>
@@ -59,7 +59,7 @@ function Feature() {
             <div className="flex gap-2 flex-col w-full">
               <h2 className="text-xl md:text-3xl lg:text-5xl tracking-tighter lg:max-w-xl font-chakra text-left">
                 About
-                <br /> HACKS'US
+                <br /> <strong>HACKS'US</strong>
               </h2>
               <p className="text-lg  max-w-xl lg:max-w-sm leading-relaxed tracking-tight text-foreground  text-left">
                 HackS’US Edition IV is a 36-hour innovation-driven hackathon
