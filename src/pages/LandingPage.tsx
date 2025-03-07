@@ -257,7 +257,7 @@ const features = [
     Icon: Cpu,
     name: "What hardware is required for the hardware track?",
     description:
-      "Teams participating in the hardware track must bring their own hardware components and equipment. This includes microcontrollers, sensors, actuators, and any other necessary components for their project. Basic tools and workspace will be provided.",
+      "Teams participating in the hardware track must bring their own hardware components and equipment. This includes microcontrollers, sensors, actuators, and any other necessary components for their project.",
     href: "#",
     background: (
       <img
