@@ -180,7 +180,6 @@ const features = [
     description:
       "HackS'US 4.0 is a premier 36-hour hackathon hosted by RSET IEDC & IIC, where participants build innovative tech solutions to tackle real-world challenges.",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -top-20 opacity-60"
@@ -196,7 +195,6 @@ const features = [
     description:
       "Students from any college or university can join, with teams required to have 4-6 members.",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -212,7 +210,6 @@ const features = [
     description:
       "The hackathon will take place at Rajagiri School of Engineering & Technology (RSET), Kakkanad, Kochi, near Infopark.",
     href: "#",
-    cta: "Learn More",
     background: (
       <iframe
         className="absolute opacity-30 w-100 h-full"
@@ -232,7 +229,6 @@ const features = [
     description:
       "Registration fees vary by category: Early Bird ₹499, Regular ₹699, and FOMO ₹799.",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -248,7 +244,6 @@ const features = [
     description:
       "Food will be provided throughout the event, with common napping and resting spaces available on campus (no dedicated accommodation).",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -264,7 +259,6 @@ const features = [
     description:
       "Teams participating in the hardware track must bring their own hardware components and equipment. This includes microcontrollers, sensors, actuators, and any other necessary components for their project. Basic tools and workspace will be provided.",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -280,7 +274,6 @@ const features = [
     description:
       "Team formation is not facilitated. Participants must register as a complete team of 4-6 members.",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -296,7 +289,6 @@ const features = [
     description:
       "Winners receive cash prizes, mentorship opportunities, industry networking, investor pitch chances, and potential internship offers.",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -312,7 +304,6 @@ const features = [
     description:
       "Bring your laptop, charger, extension cords, and personal essentials (clothes, toiletries, medicines, etc.) for the two-day hackathon.",
     href: "#",
-    cta: "Learn More",
     background: (
       <Marquee
         pauseOnHover
@@ -343,7 +334,6 @@ const features = [
     description:
       "For any queries, please refer to the contact details on our website.",
     href: "#",
-    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
