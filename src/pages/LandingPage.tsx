@@ -9,7 +9,6 @@ import {
   Book,
   CalendarIcon,
   Clipboard,
-  Clock,
   Code,
   Coffee,
   DollarSign,
@@ -40,7 +39,6 @@ import { Dock } from "@/components/ui/dock-two";
 import { HyperText } from "@/components/magicui/hyper-text";
 import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
-import { Calendar } from "@/components/ui/calendar";
 import { Marquee } from "@/components/magicui/marquee";
 import { SlidingNumber } from "@/components/ui/sliding-number";
 import { SparklesText } from "@/components/ui/sparkles-text";

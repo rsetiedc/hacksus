@@ -107,21 +107,28 @@ function Number({ mv, number }: { mv: MotionValue<number>; number: number }) {
   );
 }
 
-type SlidingNumberProps = {
+interface SlidingNumberProps {
   value: number;
-  padStart?: boolean;
-  decimalSeparator?: string;
-};
+  className?: string;
+  duration?: number;
+  prefix?: string;
+  suffix?: string;
+  thousandSeparator?: string;
+  useIndianFormat?: boolean;
+}
 
-export function SlidingNumber({
+export const SlidingNumber: React.FC<SlidingNumberProps> = ({
   value,
-  padStart = false,
-  decimalSeparator = ".",
-}: SlidingNumberProps) {
+  className = "",
+  duration = 2000,
+  prefix = "",
+  suffix = "",
+  thousandSeparator = ",",
+  useIndianFormat = true,
+}) => {
   const [displayValue, setDisplayValue] = useState(0);
 
   useEffect(() => {
-    const duration = 1000;
     const steps = 10;
     const increment = value / steps;
     let current = 0;
@@ -140,22 +147,23 @@ export function SlidingNumber({
     }, duration / steps);
 
     return () => clearInterval(timer);
-  }, [value]);
+  }, [value, duration]);
 
-  const formattedNumber = formatIndianNumber(displayValue);
+  const formattedNumber = useIndianFormat ? formatIndianNumber(displayValue) : displayValue.toString();
   const digits = formattedNumber.split("");
 
   return (
-    <div className="flex flex-col items-center mt-10">
+    <div className={`flex flex-col items-center mt-10 ${className}`}>
       <div className="text-2xl font-redhat font-bold uppercase">
-        Cash Prize
+        Prize Pool
       </div>
       <div className="flex items-center font-chakra text-5xl md:text-9xl font-bold relative text-white">
+        {prefix}
         {displayValue < 0 && "-"}₹
         {digits.map((digit, index) =>
           digit === "," ? (
             <span key={`separator-${index}`} className="mx-2">
-              ,
+              {thousandSeparator}
             </span>
           ) : (
             <Digit
@@ -170,7 +178,8 @@ export function SlidingNumber({
             />
           )
         )}
+        {suffix}
       </div>
     </div>
   );
-}
+};
