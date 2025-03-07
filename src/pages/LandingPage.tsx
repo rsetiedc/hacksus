@@ -181,9 +181,8 @@ const features = [
     name: "What is HackS'US 4.0?",
     description:
       "HackS'US 4.0 is a premier 36-hour hackathon hosted by RSET IEDC & IIC, where participants build innovative tech solutions to tackle real-world challenges.",
-    // href: "/faq#what-is-hacksus",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <img
         className="absolute -top-20 opacity-60"
@@ -198,9 +197,8 @@ const features = [
     name: "Who can participate?",
     description:
       "Students from any college or university can join, with teams required to have 4-6 members.",
-    // href: "/faq#who-can-participate",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -215,9 +213,8 @@ const features = [
     name: "Where is the event happening?",
     description:
       "The hackathon will take place at Rajagiri School of Engineering & Technology (RSET), Kakkanad, Kochi, near Infopark.",
-    // href: "/faq#location",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <iframe
         className="absolute opacity-30 w-100 h-full"
@@ -236,9 +233,8 @@ const features = [
     name: "What is the registration fee?",
     description:
       "Registration fees vary by category: Early Bird ₹499, Regular ₹699, and FOMO ₹799.",
-    // href: "/faq#registration-fee",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -253,9 +249,8 @@ const features = [
     name: "Will food and accommodation be provided?",
     description:
       "Food will be provided throughout the event, with common napping and resting spaces available on campus (no dedicated accommodation).",
-    // href: "/faq#food-accommodation",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -265,31 +260,13 @@ const features = [
     ),
     className: "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3",
   },
-  // {
-  //   Icon: Clock,
-  //   name: "When will the problem statements be released?",
-  //   description:
-  //     "Problem statements will be released 24 hours before the hackathon begins, giving teams time to strategize.",
-  //   // href: "/faq#problem-statements",
-  //   cta: "",
-  //   href: "#",
-  //   background: (
-  //     <Calendar
-  //       mode="single"
-  //       selected={new Date(2024, 3, 13, 0, 0, 0)}
-  //       className="absolute right-0 top-10 origin-top scale-75 rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-90"
-  //     />
-  //   ),
-  //   className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5",
-  // },
   {
     Icon: Lock,
     name: "Can I participate if I don't have a team?",
     description:
       "Team formation is not facilitated. Participants must register as a complete team of 4-6 members.",
-    // href: "/faq#team-formation",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -304,9 +281,8 @@ const features = [
     name: "What are the prizes and benefits?",
     description:
       "Winners receive cash prizes, mentorship opportunities, industry networking, investor pitch chances, and potential internship offers.",
-    // href: "/faq#prizes-benefits",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
@@ -321,9 +297,8 @@ const features = [
     name: "What should I bring?",
     description:
       "Bring your laptop, charger, extension cords, and personal essentials (clothes, toiletries, medicines, etc.) for the two-day hackathon.",
-    // href: "/faq#what-to-bring",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <Marquee
         pauseOnHover
@@ -353,9 +328,8 @@ const features = [
     name: "Who can I contact for more details?",
     description:
       "For any queries, please refer to the contact details on our website.",
-    // href: "/faq#contact",
-    cta: "",
     href: "#",
+    cta: "Learn More",
     background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
