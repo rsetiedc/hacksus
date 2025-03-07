@@ -132,7 +132,7 @@ const timelineData = [
     ),
   },
   {
-    title: "7 Mar",
+    title: "12 Mar",
     content: (
       <div>
         <h3 className="text-2xl text-left">Hackathon Registration Closes</h3>
@@ -259,6 +259,22 @@ const features = [
     className: "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3",
   },
   {
+    Icon: Cpu,
+    name: "What hardware is required for the hardware track?",
+    description:
+      "Teams participating in the hardware track must bring their own hardware components and equipment. This includes microcontrollers, sensors, actuators, and any other necessary components for their project. Basic tools and workspace will be provided.",
+    href: "#",
+    cta: "Learn More",
+    background: (
+      <img
+        className="absolute -right-20 -top-20 opacity-60"
+        src="/src/img/hardware.jpg"
+        alt="Hardware Requirements"
+      />
+    ),
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5",
+  },
+  {
     Icon: Lock,
     name: "Can I participate if I don't have a team?",
     description:
@@ -272,7 +288,7 @@ const features = [
         alt="Team Formation"
       />
     ),
-    className: "lg:col-start-1 lg:col-end-3 lg:row-start-3 lg:row-end-4",
+    className: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
   },
   {
     Icon: Award,
@@ -319,7 +335,7 @@ const features = [
         ))}
       </Marquee>
     ),
-    className: "lg:col-start-1 lg:col-end-4 lg:row-start-4 lg:row-end-5",
+    className: "lg:col-start-2 lg:col-end-4 lg:row-start-4 lg:row-end-5",
   },
   {
     Icon: Mail,
@@ -423,7 +439,7 @@ const LandingPage: React.FC = () => {
               Theme | <strong>SDG 12</strong>
             </p>
             <HyperText
-              className="font-redhat text-4xl md:text-6xl font-bold mb-7"
+              className="font-redhat text-4xl md:text-5xl font-bold mb-7"
               animateOnHover={false}
             >
               Sustainable Consumption and Production
