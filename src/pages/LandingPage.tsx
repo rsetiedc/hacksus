@@ -157,7 +157,7 @@ const timelineData = [
   {
     title: "15 Mar | 1:30 PM",
     content: (
-      <div className="text-4xl font-bold">3. Technical + Business Phase</div>
+      <div className="text-4xl font-bold">3. Business Phase</div>
     ),
   },
   {
