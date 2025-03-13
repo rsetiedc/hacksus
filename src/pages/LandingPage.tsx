@@ -140,15 +140,34 @@ const timelineData = [
     ),
   },
   {
-    title: "14-16 Mar 6:30 PM",
+    title: "14 Mar | 6:30 PM",
+    content: <div className="text-4xl font-bold">Registration Starts</div>,
+  },
+  {
+    title: "14 Mar | 7:30 PM",
+    content: <div className="text-4xl font-bold">Hackathon Launch</div>,
+  },
+  {
+    title: "14 Mar | 7:30 PM",
+    content: <div className="text-4xl font-bold">1. Ideation Phase</div>,
+  },
+  {
+    title: "14 Mar | 11:30 PM",
+    content: <div className="text-4xl font-bold">2. Technical Phase</div>,
+  },
+  {
+    title: "15 Mar | 1:30 PM",
     content: (
-      <div>
-        <SparklesText
-          className="text-5xl text-left"
-          text="HackS'US Edition IV"
-        />
-      </div>
+      <div className="text-4xl font-bold">3. Technical + Business Phase</div>
     ),
+  },
+  {
+    title: "16 Mar | 12:00 AM",
+    content: <div className="text-4xl font-bold">4. Shark Tank Phase</div>,
+  },
+  {
+    title: "16 Mar | 11:30 AM",
+    content: <div className="text-4xl font-bold">Closing Ceremony</div>,
   },
 ];
 
@@ -421,19 +440,37 @@ const LandingPage: React.FC = () => {
 
       <Feature />
 
+      <div className="flex flex-col items-center justify-center gap-10">
+        <h2 className="font-redhat text-3xl font-bold">Hydration Partner</h2>
+        <img
+          src="/src/img/hydration.png"
+          alt="Hydration Partner"
+          className="w-100"
+        />
+      </div>
+
       {/* Theme Section */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center py-20 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="bg-neutral-950/50 backdrop-blur-sm md:rounded-xl p-8 text-left">
-            <p className="font-redhat text-lg leading-relaxed text-3xl md:text-4xl uppercase border-b-2 border-white">
-              Theme | <strong>SDG 12</strong>
-            </p>
-            <HyperText
-              className="font-redhat text-4xl md:text-5xl font-bold mb-7"
-              animateOnHover={false}
-            >
-              Sustainable Consumption and Production
-            </HyperText>
+            <div className="flex md:flex-row flex-col items-center justify-center md:gap-10">
+              <img
+                src="/src/img/sdg.png"
+                alt="SDG 12"
+                className="w-50"
+              />
+              <div>
+                <p className="font-redhat text-lg leading-relaxed text-3xl md:text-4xl uppercase border-b-2 border-white">
+                  Theme | <strong>SDG 12</strong>
+                </p>
+                <HyperText
+                  className="font-redhat text-4xl md:text-5xl font-bold mb-7"
+                  animateOnHover={false}
+                >
+                  Responsible Consumption and Production
+                </HyperText>
+              </div>
+            </div>
 
             <p className="font-redhat text-lg mb-8 leading-relaxed">
               The 12th United Nations Sustainable Development Goal aims to
