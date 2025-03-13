@@ -41,7 +41,6 @@ import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Marquee } from "@/components/magicui/marquee";
 import { SlidingNumber } from "@/components/ui/sliding-number";
-import { SparklesText } from "@/components/ui/sparkles-text";
 
 // Constants
 const REGISTRATION_URL = "https://konfhub.com/hacksus-edition-4";
