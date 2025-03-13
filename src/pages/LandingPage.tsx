@@ -156,9 +156,7 @@ const timelineData = [
   },
   {
     title: "15 Mar | 1:30 PM",
-    content: (
-      <div className="text-4xl font-bold">3. Business Phase</div>
-    ),
+    content: <div className="text-4xl font-bold">3. Business Phase</div>,
   },
   {
     title: "16 Mar | 12:00 AM",
@@ -451,13 +449,9 @@ const LandingPage: React.FC = () => {
       {/* Theme Section */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center py-20 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-neutral-950/50 backdrop-blur-sm md:rounded-xl p-8 text-left">
+          <div className="flex flex-col jsutify-center items-center bg-neutral-950/50 backdrop-blur-sm md:rounded-xl p-8 text-left">
             <div className="flex md:flex-row flex-col items-center justify-center md:gap-10">
-              <img
-                src="/src/img/sdg.png"
-                alt="SDG 12"
-                className="w-50"
-              />
+              <img src="/src/img/sdg.png" alt="SDG 12" className="w-50" />
               <div>
                 <p className="font-redhat text-lg leading-relaxed text-3xl md:text-4xl uppercase border-b-2 border-white">
                   Theme | <strong>SDG 12</strong>
@@ -561,6 +555,7 @@ const LandingPage: React.FC = () => {
                 />
               </div>
             </div>
+            <img src="/src/img/SDG_12.png" alt="SDG 12" className="w-100 mt-10" />
           </div>
         </div>
 
