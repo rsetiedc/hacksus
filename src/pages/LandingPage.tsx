@@ -30,6 +30,7 @@ import {
   Car,
   Recycle,
   Cpu,
+  Maximize,
 } from "lucide-react";
 // import { Globe } from "@/components/magicui/globe";
 import { Timeline } from "@/components/ui/timeline";
@@ -57,88 +58,88 @@ const navigationItems = [
 ];
 
 // Timeline data
-const timelineData = [
-  {
-    title: "26 Feb",
-    content: (
-      <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
-        <img
-          className="w-full md:w-1/3 rounded-2xl shadow-lg"
-          src="/src/img/event3.jpg"
-          alt="React-ivate Workshop"
-        />
-        <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
-          <h3 className="text-2xl uppercase font-bold">React-ivate</h3>
-          <Badge className="w-fit mb-3">React Workshop</Badge>
-          <p>
-            A <strong>One-Day</strong> Workshop on <strong>React</strong>,
+  const timelineData = [
+    {
+      title: "26 Feb",
+      content: (
+        <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
+          <img
+            className="w-full md:w-1/3 rounded-2xl shadow-lg"
+            src="/src/img/event3.jpg"
+            alt="React-ivate Workshop"
+          />
+          <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
+            <h3 className="text-2xl uppercase font-bold">React-ivate</h3>
+            <Badge className="w-fit mb-3">React Workshop</Badge>
+            <p>
+              A <strong>One-Day</strong> Workshop on <strong>React</strong>,
             taking participants from zero to hero by building an AI-powered chat
             app.
-          </p>
+            </p>
+          </div>
         </div>
-      </div>
-    ),
-  },
-  {
-    title: "27 Feb",
-    content: (
-      <div>
-        <h3 className="text-2xl text-left md:text-left">
-          Hackathon Registration Opens
-        </h3>
-      </div>
-    ),
-  },
-  {
-    title: "27 Feb",
-    content: (
-      <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
-        <img
-          className="w-full md:w-1/3 rounded-2xl shadow-lg"
-          src="/src/img/event2.jpg"
-          alt="RAG-volution Workshop"
-        />
-        <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
-          <h3 className="text-2xl uppercase font-bold">RAG-volution</h3>
-          <Badge className="w-fit mb-3">RAG Workshop</Badge>
-          <p>
-            A <strong>hands-on</strong> session on
-            <strong> Retrieval Augmented Generation (RAG)</strong> using
-            <strong> Google Colab</strong> and <strong>Python</strong>.
-          </p>
+      ),
+    },
+    {
+      title: "27 Feb",
+      content: (
+        <div>
+          <h3 className="text-2xl text-left md:text-left">
+            Hackathon Registration Opens
+          </h3>
         </div>
-      </div>
-    ),
-  },
-  {
-    title: "2 Mar",
-    content: (
-      <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
-        <img
-          className="w-full md:w-1/3 rounded-2xl shadow-lg"
-          src="/src/img/event1.jpg"
-          alt="UI-Alchemist Workshop"
-        />
-        <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
-          <h3 className="text-2xl uppercase font-bold">UI-Alchemist</h3>
-          <Badge className="w-fit mb-3">UI/UX Workshop</Badge>
-          <p>
-            A <strong>12-hour</strong> design hackathon using{" "}
-            <strong>Figma</strong>.
-          </p>
+      ),
+    },
+    {
+      title: "27 Feb",
+      content: (
+        <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
+          <img
+            className="w-full md:w-1/3 rounded-2xl shadow-lg"
+            src="/src/img/event2.jpg"
+            alt="RAG-volution Workshop"
+          />
+          <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
+            <h3 className="text-2xl uppercase font-bold">RAG-volution</h3>
+            <Badge className="w-fit mb-3">RAG Workshop</Badge>
+            <p>
+              A <strong>hands-on</strong> session on
+              <strong> Retrieval Augmented Generation (RAG)</strong> using
+              <strong> Google Colab</strong> and <strong>Python</strong>.
+            </p>
+          </div>
         </div>
-      </div>
-    ),
-  },
-  {
+      ),
+    },
+    {
+      title: "2 Mar",
+      content: (
+        <div className="flex flex-col-reverse md:flex-row gap-5 items-start">
+          <img
+            className="w-full md:w-1/3 rounded-2xl shadow-lg"
+            src="/src/img/event1.jpg"
+            alt="UI-Alchemist Workshop"
+          />
+          <div className="flex flex-col min-w-10 gap-1 text-left md:text-left">
+            <h3 className="text-2xl uppercase font-bold">UI-Alchemist</h3>
+            <Badge className="w-fit mb-3">UI/UX Workshop</Badge>
+            <p>
+              A <strong>12-hour</strong> design hackathon using{" "}
+              <strong>Figma</strong>.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
     title: "12 Mar",
-    content: (
-      <div>
-        <h3 className="text-2xl text-left">Hackathon Registration Closes</h3>
-      </div>
-    ),
-  },
-  {
+      content: (
+        <div>
+          <h3 className="text-2xl text-left">Hackathon Registration Closes</h3>
+        </div>
+      ),
+    },
+    {
     title: "14 Mar | 6:30 PM",
     content: <div className="text-4xl font-bold">Registration Starts</div>,
   },
@@ -170,210 +171,257 @@ const timelineData = [
 
 // Essential items to bring
 const essentialItems = [
-  {
-    name: "Laptop",
-    body: "Bring your laptop to work on your project during the hackathon.",
-  },
-  {
-    name: "Charger",
-    body: "Don't forget your charger to keep your device powered throughout the event.",
-  },
-  {
-    name: "Extension Cords",
-    body: "Extension cords may be useful for additional power connectivity in a busy space.",
-  },
-  {
-    name: "Personal Essentials",
-    body: "Pack personal essentials including clothes, toiletries, medicines, etc. for a comfortable stay.",
-  },
-];
+    {
+      name: "Laptop",
+      body: "Bring your laptop to work on your project during the hackathon.",
+    },
+    {
+      name: "Charger",
+      body: "Don't forget your charger to keep your device powered throughout the event.",
+    },
+    {
+      name: "Extension Cords",
+      body: "Extension cords may be useful for additional power connectivity in a busy space.",
+    },
+    {
+      name: "Personal Essentials",
+      body: "Pack personal essentials including clothes, toiletries, medicines, etc. for a comfortable stay.",
+    },
+  ];
 
 // Features data
-const features = [
-  {
-    Icon: Code,
+  const features = [
+    {
+      Icon: Code,
     name: "What is HackS'US 4.0?",
-    description:
+      description:
       "HackS'US 4.0 is a premier 36-hour hackathon hosted by RSET IEDC & IIC, where participants build innovative tech solutions to tackle real-world challenges.",
-    href: "#",
-    background: (
-      <img
-        className="absolute -top-20 opacity-60"
-        src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      href: "#",
+      background: (
+        <img
+          className="absolute -top-20 opacity-60"
+          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="HackS'US 4.0"
-      />
-    ),
-    className: "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2",
-  },
-  {
-    Icon: Users,
-    name: "Who can participate?",
-    description:
-      "Students from any college or university can join, with teams required to have 4-6 members.",
-    href: "#",
-    background: (
-      <img
-        className="absolute -right-20 -top-20 opacity-60"
-        src="/src/img/participants.jpg"
-        alt="Participants"
-      />
-    ),
-    className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2",
-  },
-  {
-    Icon: MapPin,
-    name: "Where is the event happening?",
-    description:
-      "The hackathon will take place at Rajagiri School of Engineering & Technology (RSET), Kakkanad, Kochi, near Infopark.",
-    href: "#",
-    background: (
-      <iframe
-        className="absolute opacity-30 w-100 h-full"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.4725237394496!2d76.35551597503105!3d9.993460390111602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20of%20Engineering%20%26%20Technology!5e1!3m2!1sen!2sin!4v1740593557134!5m2!1sen!2sin"
-        style={{ border: 0, pointerEvents: "none" }}
-        allowFullScreen={false}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Rajagiri Map"
-      ></iframe>
-    ),
-    className: "lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3",
-  },
-  {
-    Icon: DollarSign,
-    name: "What is the registration fee?",
-    description:
-      "Registration fees vary by category: Early Bird ₹499, Regular ₹699, and FOMO ₹799.",
-    href: "#",
-    background: (
-      <img
-        className="absolute -right-20 -top-20 opacity-60"
-        src="/src/img/fee.jpg"
-        alt="Registration Fee"
-      />
-    ),
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3",
-  },
-  {
-    Icon: Coffee,
-    name: "Will food and accommodation be provided?",
-    description:
-      "Food will be provided throughout the event, with common napping and resting spaces available on campus (no dedicated accommodation).",
-    href: "#",
-    background: (
-      <img
-        className="absolute -right-20 -top-20 opacity-60"
-        src="/src/img/food.jpg"
-        alt="Food and Accommodation"
-      />
-    ),
-    className: "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3",
-  },
-  {
+        />
+      ),
+      className: "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    },
+    {
+      Icon: Users,
+      name: "Who can participate?",
+      description:
+        "Students from any college or university can join, with teams required to have 4-6 members.",
+      href: "#",
+      background: (
+        <img
+          className="absolute -right-20 -top-20 opacity-60"
+          src="/src/img/participants.jpg"
+          alt="Participants"
+        />
+      ),
+      className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2",
+    },
+    {
+      Icon: MapPin,
+      name: "Where is the event happening?",
+      description:
+        "The hackathon will take place at Rajagiri School of Engineering & Technology (RSET), Kakkanad, Kochi, near Infopark.",
+      href: "#",
+      background: (
+        <iframe
+          className="absolute opacity-30 w-100 h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.4725237394496!2d76.35551597503105!3d9.993460390111602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20of%20Engineering%20%26%20Technology!5e1!3m2!1sen!2sin!4v1740593557134!5m2!1sen!2sin"
+          style={{ border: 0, pointerEvents: "none" }}
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Rajagiri Map"
+        ></iframe>
+      ),
+      className: "lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3",
+    },
+    {
+      Icon: DollarSign,
+      name: "What is the registration fee?",
+      description:
+        "Registration fees vary by category: Early Bird ₹499, Regular ₹699, and FOMO ₹799.",
+      href: "#",
+      background: (
+        <img
+          className="absolute -right-20 -top-20 opacity-60"
+          src="/src/img/fee.jpg"
+          alt="Registration Fee"
+        />
+      ),
+      className: "lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3",
+    },
+    {
+      Icon: Coffee,
+      name: "Will food and accommodation be provided?",
+      description:
+        "Food will be provided throughout the event, with common napping and resting spaces available on campus (no dedicated accommodation).",
+      href: "#",
+      background: (
+        <img
+          className="absolute -right-20 -top-20 opacity-60"
+          src="/src/img/food.jpg"
+          alt="Food and Accommodation"
+        />
+      ),
+      className: "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3",
+    },
+    {
     Icon: Cpu,
     name: "What hardware is required for the hardware track?",
-    description:
+      description:
       "Teams participating in the hardware track must bring their own hardware components and equipment. This includes microcontrollers, sensors, actuators, and any other necessary components for their project.",
-    href: "#",
-    background: (
+      href: "#",
+      background: (
       <img
         className="absolute -right-20 -top-20 opacity-60"
         src="/src/img/hardware.jpg"
         alt="Hardware Requirements"
-      />
-    ),
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5",
-  },
-  {
-    Icon: Lock,
+        />
+      ),
+      className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5",
+    },
+    {
+      Icon: Lock,
     name: "Can I participate if I don't have a team?",
-    description:
-      "Team formation is not facilitated. Participants must register as a complete team of 4-6 members.",
-    href: "#",
-    background: (
-      <img
-        className="absolute -right-20 -top-20 opacity-60"
-        src="/src/img/team-lock.jpg"
-        alt="Team Formation"
-      />
-    ),
-    className: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
-  },
-  {
-    Icon: Award,
-    name: "What are the prizes and benefits?",
-    description:
-      "Winners receive cash prizes, mentorship opportunities, industry networking, investor pitch chances, and potential internship offers.",
-    href: "#",
-    background: (
-      <img
-        className="absolute -right-20 -top-20 opacity-60"
-        src="/src/img/award.jpg"
-        alt="Prizes and Benefits"
-      />
-    ),
-    className: "lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4",
-  },
-  {
-    Icon: Clipboard,
-    name: "What should I bring?",
-    description:
-      "Bring your laptop, charger, extension cords, and personal essentials (clothes, toiletries, medicines, etc.) for the two-day hackathon.",
-    href: "#",
-    background: (
-      <Marquee
-        pauseOnHover
-        className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
-      >
+      description:
+        "Team formation is not facilitated. Participants must register as a complete team of 4-6 members.",
+      href: "#",
+      background: (
+        <img
+          className="absolute -right-20 -top-20 opacity-60"
+          src="/src/img/team-lock.jpg"
+          alt="Team Formation"
+        />
+      ),
+      className: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
+    },
+    {
+      Icon: Award,
+      name: "What are the prizes and benefits?",
+      description:
+        "Winners receive cash prizes, mentorship opportunities, industry networking, investor pitch chances, and potential internship offers.",
+      href: "#",
+      background: (
+        <img
+          className="absolute -right-20 -top-20 opacity-60"
+          src="/src/img/award.jpg"
+          alt="Prizes and Benefits"
+        />
+      ),
+      className: "lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4",
+    },
+    {
+      Icon: Clipboard,
+      name: "What should I bring?",
+      description:
+        "Bring your laptop, charger, extension cords, and personal essentials (clothes, toiletries, medicines, etc.) for the two-day hackathon.",
+      href: "#",
+      background: (
+        <Marquee
+          pauseOnHover
+          className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
+        >
         {essentialItems.map((f, idx) => (
-          <figure
-            key={idx}
-            className="relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15] transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none"
-          >
-            <div className="flex flex-row items-center gap-2">
-              <div className="flex flex-col">
-                <figcaption className="text-sm font-medium dark:text-white ">
-                  {f.name}
-                </figcaption>
+            <figure
+              key={idx}
+              className="relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15] transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none"
+            >
+              <div className="flex flex-row items-center gap-2">
+                <div className="flex flex-col">
+                  <figcaption className="text-sm font-medium dark:text-white ">
+                    {f.name}
+                  </figcaption>
+                </div>
               </div>
-            </div>
-            <blockquote className="mt-2 text-xs">{f.body}</blockquote>
-          </figure>
-        ))}
-      </Marquee>
-    ),
-    className: "lg:col-start-2 lg:col-end-4 lg:row-start-4 lg:row-end-5",
-  },
-  {
-    Icon: Mail,
-    name: "Who can I contact for more details?",
-    description:
-      "For any queries, please refer to the contact details on our website.",
-    href: "#",
-    background: (
-      <img
-        className="absolute -right-20 -top-20 opacity-60"
-        src="/src/img/contact.jpg"
-        alt="Contact"
-      />
-    ),
-    className: "lg:col-start-4 lg:col-end-5 lg:row-start-4 lg:row-end-5",
-  },
-];
+              <blockquote className="mt-2 text-xs">{f.body}</blockquote>
+            </figure>
+          ))}
+        </Marquee>
+      ),
+      className: "lg:col-start-2 lg:col-end-4 lg:row-start-4 lg:row-end-5",
+    },
+    {
+      Icon: Mail,
+      name: "Who can I contact for more details?",
+      description:
+        "For any queries, please refer to the contact details on our website.",
+      href: "#",
+      background: (
+        <img
+          className="absolute -right-20 -top-20 opacity-60"
+          src="/src/img/contact.jpg"
+          alt="Contact"
+        />
+      ),
+      className: "lg:col-start-4 lg:col-end-5 lg:row-start-4 lg:row-end-5",
+    },
+  ];
 
 // Helper function for smooth scrolling
 const scrollToSection = (sectionId: string) => {
   document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
 };
 
+// Add a function to toggle full screen
+const toggleFullScreen = () => {
+  const countdownSection = document.getElementById("countdown-section");
+  if (countdownSection) {
+    if (!document.fullscreenElement) {
+      countdownSection.requestFullscreen().catch((err) => {
+        console.error(
+          `Error attempting to enable full-screen mode: ${err.message} (${err.name})`
+        );
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
+};
+
 // Main component
 const LandingPage: React.FC = () => {
+  // Timer state
+  const [timeLeft, setTimeLeft] = React.useState({
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
+
+  // Timer update logic
+  React.useEffect(() => {
+    const updateTimer = () => {
+      const targetDate = new Date("March 16, 2025 09:00:00");
+
+      const now = new Date().getTime();
+      const distance = targetDate.getTime() - now;
+
+      const totalHours = Math.floor(distance / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      setTimeLeft({
+        hours: String(totalHours).padStart(2, "0"),
+        minutes: String(minutes).padStart(2, "0"),
+        seconds: String(seconds).padStart(2, "0"),
+      });
+    };
+
+    const timerId = setInterval(updateTimer, 1000);
+    updateTimer(); // Initial call to set the timer immediately
+
+    return () => clearInterval(timerId);
+  }, []);
+
   return (
     <div
       className="relative flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-fixed overflow-x-hidden"
       style={{
         backgroundImage: "url('src/img/background1.jpg')",
-        backgroundPosition: `center ${scrollY * 0.5}px`,
       }}
     >
       <Dock
@@ -432,8 +480,94 @@ const LandingPage: React.FC = () => {
         className="font-redhat text-white my-10"
         defaultVelocity={0.5}
       >
-        HACKS'US - EDITION IV |
+        HACKS'US - EDITION IV <span className="text-green-400">IS LIVE</span> |
       </VelocityScroll>
+
+      <section
+        id="countdown-section"
+        className="relative z-10 flex flex-col items-center justify-center text-center py-20 px-4 md:px-8"
+      >
+        {/* <style>{`
+          @keyframes glitch {
+            0% {
+              transform: translate(0);
+              opacity: 1;
+            }
+            20% {
+              transform: translate(-2px, 2px);
+              opacity: 0.8;
+            }
+            40% {
+              transform: translate(-2px, -2px);
+              opacity: 0.6;
+            }
+            60% {
+              transform: translate(2px, 2px);
+              opacity: 0.8;
+            }
+            80% {
+              transform: translate(2px, -2px);
+              opacity: 1;
+            }
+            100% {
+              transform: translate(0);
+              opacity: 1;
+            }
+          }
+
+          .glitch {
+            animation: glitch 1s infinite;
+            position: relative;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 0, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5);
+          }
+        `}</style> */}
+
+        <h2 className="font-redhat text-3xl font-bold mb-2 uppercase tracking-wider glitch">
+          Hackathon Countdown
+        </h2>
+        <div className="flex gap-15 font-redhat items-center">
+          <div className="flex flex-col items-center">
+            <span
+              className="text-9xl font-chakra font-bold text-transparent -webkit-text-stroke-2 text-white text-shadow-[0_0_10px_rgba(128,0,128,0.7),0_0_20px_rgba(128,0,128,0.5)]"
+              id="hours"
+            >
+              {timeLeft.hours}
+            </span>
+            <span className="text-lg">Hours</span>
+          </div>
+          <p className="text-9xl font-chakra font-bold text-shadow-[0_0_10px_rgba(128,0,128,0.7),0_0_20px_rgba(128,0,128,0.5)]">
+            :
+          </p>
+          <div className="flex flex-col items-center">
+            <span
+              className="text-9xl font-chakra font-bold text-transparent -webkit-text-stroke-2 text-white text-shadow-[0_0_10px_rgba(128,0,128,0.7),0_0_20px_rgba(128,0,128,0.5)]"
+              id="minutes"
+            >
+              {timeLeft.minutes}
+            </span>
+            <span className="text-lg">Minutes</span>
+          </div>
+          <p className="text-9xl font-chakra font-bold text-shadow-[0_0_10px_rgba(128,0,128,0.7),0_0_20px_rgba(128,0,128,0.5)]">
+            :
+          </p>
+        <div className="flex flex-col items-center">
+            <span
+              className="text-9xl font-chakra font-bold text-transparent -webkit-text-stroke-2 text-white text-shadow-[0_0_10px_rgba(128,0,128,0.7),0_0_20px_rgba(128,0,128,0.5)]"
+              id="seconds"
+            >
+              {timeLeft.seconds}
+            </span>
+            <span className="text-lg">Seconds</span>
+          </div>
+          <button
+            onClick={toggleFullScreen}
+            className="ml-4 p-2  text-white rounded-lg  transition"
+          >
+            <Maximize size="24" />
+          </button>
+        </div>
+      </section>
 
       <Feature />
 
@@ -456,12 +590,12 @@ const LandingPage: React.FC = () => {
                 <p className="font-redhat text-lg leading-relaxed text-3xl md:text-4xl uppercase border-b-2 border-white">
                   Theme | <strong>SDG 12</strong>
                 </p>
-                <HyperText
+          <HyperText
                   className="font-redhat text-4xl md:text-5xl font-bold mb-7"
-                  animateOnHover={false}
-                >
+            animateOnHover={false}
+          >
                   Responsible Consumption and Production
-                </HyperText>
+          </HyperText>
               </div>
             </div>
 
@@ -555,7 +689,11 @@ const LandingPage: React.FC = () => {
                 />
               </div>
             </div>
-            <img src="/src/img/SDG_12.png" alt="SDG 12" className="w-100 mt-10" />
+            <img
+              src="/src/img/SDG_12.png"
+              alt="SDG 12"
+              className="w-100 mt-10"
+            />
           </div>
         </div>
 
